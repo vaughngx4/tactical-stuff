@@ -16,7 +16,7 @@
 - Used to change certificates in an active installation (brings containers down)
 - Expects certificates in trmmcert.tar.gz as trmmcert/fullchain.pem and trmmcert/privatekey.pem
 - Requires certs.sh to bring tactical back up again.
-- NOTE: Change /home/user/trmm/ in the certs.sh script to the directory certs.sh is in (along with the trmmcert/ directory). This allows the script to be run over ssh (ssh user@10.0.0.5 'bash -c /path/to/certs.sh') without any errors.
+- NOTE: Change /home/user/trmm/ in the certs.sh script to the directory certs.sh is in (along with trmmcert.tar.gz). This allows the script to be run over ssh (ssh user@10.0.0.5 'bash -c /path/to/certs.sh') without any errors.
 
 ### Unsupported Configurations
 > See <https://docs.tacticalrmm.com> for more info and/or if you're having issues with mesh and HAProxy.
