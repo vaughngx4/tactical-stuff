@@ -9,7 +9,6 @@
 - Updates to latest compose file.
 - Removes and pulls new images.
 - Requires certs.sh to bring tactical back up again.
-- NOTE: Change /home/user/trmm/ in the certs.sh script to the directory certs.sh is in (along with the trmmcert/ directory). This allows the script to be run over ssh (ssh user@10.0.0.5 'bash -c /path/to/certs.sh') without any errors.
 
 ### Certificate Script (docker/certs.sh)
 
