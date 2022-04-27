@@ -26,8 +26,3 @@
 - Configure certificates for HAProxy as the same certificates in trmm(see certs.sh for updating trmm certs)
 - Edit domains and IPs in config file before using.
 - Includes config for www.example.com to show how to manage a secondary certificate (for other non-trmm related https services, remove if unused).
-
-## Official Community
-
-- [Official Chat Room - Discord](https://discord.gg/upGTkWp)
-
