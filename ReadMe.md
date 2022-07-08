@@ -17,6 +17,14 @@
 - Requires certs.sh to bring tactical back up again.
 - NOTE: Change /home/user/trmm/ in the certs.sh script to the directory certs.sh is in (along with trmmcert.tar.gz). This allows the script to be run over ssh (ssh user@10.0.0.5 'bash -c /path/to/certs.sh') without any errors.
 
+### pfSense Certificate Script (docker/pfsense-cert-script.sh)
+
+- Assumes your acme cert name is `Tactical`. If not, edit the script accordingly.
+- Your pfSense machine must have access to your docker machine.
+- Under ACME package in the pfSense GUI, set a shell command to run and enter the path of the script.
+- Creates an archive container your certs > copies the archive to your docker host in the `trmm` folder > runs `certs.sh` above also in the `trmm` folder to apply new certificates.
+- NOTE: Change necessary details in the script before use.
+
 ## Unsupported Configurations
 > See <https://docs.tacticalrmm.com> for more info and/or if you're having issues with mesh and HAProxy.
 
